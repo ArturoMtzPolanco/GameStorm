@@ -7,7 +7,7 @@ namespace GameStorm.Context
     {
         public AplicationDbContext(DbContextOptions options) : base(options) { }
         //modelos a mapear
-        Console.WriteLine("Hello World!");
+        Console.WriteLine("Hello Worl!");
 
 
         public DbSet<Usuario> Usuarios { get; set; }
