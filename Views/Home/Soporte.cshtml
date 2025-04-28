@@ -1,6 +1,43 @@
-﻿@{
-    ViewData["Title"] = "Soporte";
-}
-<h1>@ViewData["Title"] Hola</h1>
-
-<p>Use this page to detail your site's privacy policy.</p>
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Store</title>
+</head>
+<body style="background-color:#1b2838">
+    <div class="container my-4">
+        <h2 class="text-white">Centro de Ayuda</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                        ¿Cómo puedo comprar un juego?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Puedes comprar un juego añadiéndolo al carrito y siguiendo las instrucciones de pago.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        ¿Cómo solicito un reembolso?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Puedes solicitar un reembolso en la sección de soporte dentro de los 14 días posteriores a la compra.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 style="color: white">Escribir comentario</h2>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <br />
+        <button type="button" class="btn btn-primary">Enviar comentario</button>
+    </div>
+</body>
+</html>
+    
